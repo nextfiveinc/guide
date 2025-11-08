@@ -5,9 +5,14 @@ A complete system to guide you to your goals and help you achieve them by keepin
 <table>
   <tr align="center">
     <td align="center">
-      <img src="https://github.com/nextfiveinc/breakbox/blob/main/screenshots/Screenshot%20from%202025-08-12%2018-18-10.png" alt="Home screen" width="400">
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/guide_home_light.png" alt="Home screen" width="400">
       <br>
-      <em>1-click and break out into something fun. Or healthy. Or useful.</em>
+      <em>Guide home - Light theme</em>
+    </td>
+    <td align="center">
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/guide_home_dark.png" alt="Home screen" width="400">
+      <br>
+      <em>Guide home - Dark theme</em>
     </td>
  </tr>
 </table>
