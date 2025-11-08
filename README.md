@@ -1,6 +1,6 @@
-# BreakBox
+# Guide
 
-BreakBox is a minimalist, single-file web app designed to give you a gentle nudge when you're feeling stuck, bored, or stuck in a rut. It provides a random, simple task to help you take a quick, productive break and inject a little variety into your day. Think of it as your own spontaneity engine.
+A complete system to guide you to your goals and help you achieve them by keeping you focussed, overcome blocks and build momentum. Private. No-installation.
 
 <table>
   <tr align="center">
@@ -12,73 +12,70 @@ BreakBox is a minimalist, single-file web app designed to give you a gentle nudg
  </tr>
 </table>
 
+---
 
-## The Philosophy: Why a Cooldown?
+## What is Guide?
 
-Unlike endless feeds or lists, this tool is designed for **action, not browsing**.
+Guide is a complete productivity system packed into a **single HTML file**. It runs entirely in your browser, and all your data is stored locally on your machine. There are no accounts, no servers, and no tracking. Your data is 100% yours.
 
-The one-hour cooldown timer is the most important feature. It encourages you to **commit to the suggestion you receive**, rather than endlessly clicking "Something Else" in search of the "perfect" task. The goal is to break the cycle of indecision and get you moving.
+Listen: It's a glorified To-Do list. But then again, it's So. Much. More.
 
-## How It Works
+It's designed for those of us who want a powerful, private tool that goes beyond the simple to-do list. It combines goal-oriented task management with unique "Playbooks" to help you navigate the common mental hurdles of productivity—like feeling blocked, bored, or stressed.
 
-1.  **Click "Surprise Me!"** to get a random task.
-2.  **Do the Thing!** The suggestions are designed to be quick and easy.
-3.  **The Timer Starts.** Once you get a suggestion, a one-hour cooldown begins. You can't get a new prompt until the time is up.
-4.  **Add Your Own Ideas.** Use the input box at the bottom to add your own quick tasks to the rotation, making the tool perfectly tailored to you.
+_[**NOTE**]: Some optional features depend on AI, which are disabled by default. And you can either choose to use your local models or not use them at all. But should you choose to use your API for cloud based AI providers such as Anthropic or Google or OpenAI, some of your data will be sent to your selected providers for the features to work._
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/nextfiveinc/breakbox/blob/main/screenshots/Screenshot%20from%202025-08-12%2018-17-43.png" alt="Home screen" width="200">
-      <br>
-      <em>Click "Surprise Me" for a suggestion</em>
-    </td>
-    <td align="center">
-      <img src="https://github.com/nextfiveinc/breakbox/blob/main/screenshots/Screenshot%20from%202025-08-12%2018-18-02.png" alt="Suggestion screen" width="200">
-      <br>
-      <em>Click "Something else" if you want</em> <br>
-    </td>
-     <td align="center">
-      <img src="https://github.com/nextfiveinc/breakbox/blob/main/screenshots/Screenshot%20from%202025-08-12%2018-20-00.png" alt="Add your own task" width="200">
-      <br>
-      <em>Add your own micro-task like folding laundry</em>
-    </td>
-    <td align="center">
-      <img src="https://github.com/nextfiveinc/breakbox/blob/main/screenshots/Screenshot%20from%202025-08-12%2018-18-10.png" alt="Cooldown screen" width="200">
-      <br>
-      <em>Act. Don't just browse.</em>
-    </td>
- </tr>
-</table>
 
------
+## Core Philosophies
 
-## Features
+*  Set your goals. As many as you want - but we suggest keep no more than 4-5 larger ones to remain focussed.
+*  No more than 1 active, i.e, Primary goal at a time; For larger goals - say, lose 10 kg weight - we suggest you keep it active for a month.
+*  Tasks should be connected to Goals. We do not enforce it, but we strongly recommend you do; You can do it in just 2-clicks.
+*  No more than 3 tasks at a time. We suggest, just complete 3 tasks for the entire day.
+*  Build and follow routines. That way, you don't have to think "what next". Lowers friction.
+*  Use playbooks for when you get blocked. Or stressed. You can customize these with what works for you.
+*  We all get bored. Take a break. Ask Guide for some fun options (no AI needed).
+*  Keep your most important References and Reminders handy, right within Guide. Such as - "why did I want to lose weight in the first place...".  To help yourself with your Routines / Playbooks and on remain on track.
+*  Offline first. Cross-platform. No blobs; just single HTML file.
 
-*   **One-Click Action:** Get a random suggestion from a built-in list of over 30 simple tasks.
-*   **Cooldown Timer:** A one-hour timer with a progress bar prevents overuse and encourages action.
-*   **"Something Else" Option:** Don't like the first suggestion? You get a couple of chances to ask for another within the first 10 minutes.
-*   **Add Custom Tasks:** Personalize the app by adding your own break ideas to the pool of suggestions.
-*   **100% Offline & Private:** The app is a single HTML file. All data (your custom tasks, the timer state) is stored locally in your browser. Nothing is ever sent to a server.
+
+## Why Use Guide?
+
+*   **🧠 Holistic productivity**: It's not just about what you do, but how you feel. The integrated **Blocked, Bored, and Stressed Playbooks** provide interactive guides and tips to get you back on track when your mental state is the real bottleneck.
+*   **🤖 Smart AI assistance**: Leverage the power of modern AI to break down complex tasks, brainstorm next steps for your goals, or get insights into your own productivity patterns. It supports multiple providers (Gemini, OpenAI, Claude, DeepSeek or use locally served models) and you use your **own API key**, ensuring your data remains private.
+*   **🔒 Private & Offline-First**: All data lives and dies in your browser's local storage. Nothing is ever sent to a server. This makes it incredibly fast, reliable offline, and completely private.
+*   **🔧 Fully Customizable & Portable**: You can edit, import, or export your data for the built-in Playbooks to tailor them to your personal strategies. The full application backup feature allows you to take your entire workspace with you to any device with a web browser.
+
+## Some Features
+
+-   **Goal-oriented Task Management**: A simple but effective system with 'Pending Today', a 'Task Bowl' for your backlog, and a 'Done List'.
+-   **AI Task Assistant**: Get AI-powered suggestions for the "absolute next step" on any task.
+-   **AI Goal Planner**: Select a goal and get an AI-generated list of actionable first steps to add to your backlog.
+-   **AI Productivity Insights**: Ask questions about your productivity, get summaries of your completed work, and identify tasks that may have fallen through the cracks.
+-   **Mental State Playbooks**: Interactive tools to help when you're feeling **Blocked**, **Bored**, or **Stressed**.
+-   **Routines**: Create and load lists of recurring tasks (e.g., "Morning Startup") with a single click.
+-   **Blitz Timers**: Start a 5-minute focused work session on any pending task.
+-   **Full Data Control**: Backup and restore your entire application state to a single JSON file.
+-   **Dark & Light Modes**: Easy on the eyes, day or night.
 
 ## How to Use
 
-1.  **Download:** Save the `breakbox.html` file from this folder.
-2.  **Open:** Open the file in any modern web browser.
-3.  **Get Unstuck:** Click the button whenever you need a break from your routine.
+This is the best part. There is no installation.
 
-The app's state is automatically saved in the browser you use, so your cooldown timer and custom tasks will be waiting for you when you return.
+1.  **Download** the `guide.html` file.
+2.  **Open** it in any modern web browser - on your desktop or your mobile. Tested on Chrome on Android and Firefox / Chrome on Desktop.
+3.  That was it, actually!
 
+ The app is now running. You can bookmark the page for easy access. All your data will be saved automatically in that browser.
 
-## Customization
+**Important Note on Data**: Because your data is stored in the browser, it is tied to that specific browser on that specific computer. To use the app on another machine or to prevent data loss, be sure to use the **Settings > Backup & Restore > Export Full Backup** feature regularly.
 
-This app is easy to customize to your own needs directly in the code:
+### Contributing
 
-*   **Edit Default Actions:** The list of built-in suggestions is in a simple JavaScript array called `defaultActions` inside the `<script>` tag. You can add, remove, or edit these to your liking.
-*   **Adjust Timers:** You can change the `COOLDOWN` and `ELSE_WINDOW` constants at the top of the script to make the timers longer or shorter.
-
------
+Contributions are welcome! If you have a feature idea or have found a bug, please open an issue first to discuss it.
 
 ## License
 
-GNU General Public License v3.0 or later. See [COPYING](COPYING) for more details.
+This project is licensed under the GPL 3.0 License - see the [COPYING](COPYING) file for details.
+
+
+
