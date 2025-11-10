@@ -62,6 +62,8 @@ _[**NOTE**]: Some optional features depend on AI, which are disabled by default.
 -   **Full Data Control**: Backup and restore your entire application state to a single JSON file.
 -   **Dark & Light Modes**: Easy on the eyes, day or night.
 
+[Screenshots gallery](screenshots/README.md)
+
 ## How to Use
 
 This is the best part. There is no installation.
