@@ -62,7 +62,27 @@ _[**NOTE**]: Some optional features depend on AI, which are disabled by default.
 -   **Full Data Control**: Backup and restore your entire application state to a single JSON file.
 -   **Dark & Light Modes**: Easy on the eyes, day or night.
 
-[Screenshots gallery](screenshots/README.md)
+<table>
+ <tr align="center">
+    <td align="center" width=33%>
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/03-guide_task_bowl.png" alt="TaskBowl - all your tasks">
+      <br>
+      <em>TaskBowl - all your tasks</em>
+    </td>
+    <td align="center" width=33%>
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/04-guide_routines.png" alt="Use routines to reduce friction">
+      <br>
+      <em>Routines</em>
+    </td>
+    <td align="center" width=33%>
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/05-guide_routines_edit.png" alt="Customize your routines to what works for you">
+      <br>
+      <em>Customize your routines</em>
+     </td>
+ </tr>
+</table>
+
+For more screenshots, see [gallery](screenshots/README.md)
 
 ## How to Use
 
