@@ -1,0 +1,553 @@
+{
+  "version": "2.0-backup",
+  "exportedAt": "2025-11-24T12:28:55.624Z",
+  "data": {
+    "pendingTasks": [
+      {
+        "id": "micvquucd8eg3",
+        "text": "1. Let's quickly learn about the Guide app. Starting with setting the focus for this goal  - \"learning about Guide app\". <br/> <i>HOW: From the top, click <b>'See all goals'</b>, then click <b>'Set Focus'</b> against the goal. Pick today's date, for example.</i>",
+        "createdAt": "2025-11-24T08:23:27.396Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "micwkew7pbb5e",
+        "text": "2. Let's mark the above ('Set focus' task) and this task as \"Done\".  <br/> <i>HOW: Click the <b>'Done'</b> button for Task 1 above and enter a comment on what you did. At least 5 chars.  Repeat for this task card too.</i>",
+        "createdAt": "2025-11-24T08:46:26.407Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "micwupxfvifjs",
+        "text": "3. Task Bowl is your complete list of To-Do's you can pick from. Hidden from focus area till you decide you are ready. Let's add two tasks from the Task Bowl. And <i>then</i> mark this one DONE.<br/> <i>HOW: Click the <b>'Task Bowl'</b> link at the bottom. Click <b>'Add to Today'</b> button for task 4 and task 5.</i>",
+        "createdAt": "2025-11-24T08:54:27.267Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      }
+    ],
+    "doneTasks": null,
+    "taskBowl": [
+      {
+        "id": "mid494h3s3w5q",
+        "text": "16. That's it! You are ready to continue using / exploring the Guide on your own. And hope it helps you a bit. Just remember not to consider it yet another To-Do list. Use it for tips when you are low. And for managing your path to your goals :) We don't track you. So, it'd be nice to hear from you if you found it helpful or have any feedback. Drop a mail at '[github-account-name-here]+guide@gmail.com'.  Or star our repo  leave issues at  <a href='https://github.com/nextfiveinc/guide'> https://github.com/nextfiveinc/guide </a>",
+        "createdAt": "2025-11-24T12:21:36.615Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid48ctp3sz86",
+        "text": "15. Enable AI powered features of Guide by setting your own API key in the settings.  This will allow you to use next step \"Help\" on tasks. Or Next step guidance on Goals with \"Guide me\".  \"What should I focus on\" helps you quickly identify the right direction.  Click the <b>AI icon</b> at top left right besides Home button - to see other stuff Guide can help you with using AI. <br/> <i>HOW: Go to <b> Settings</b> and enter your API key for the provider you want in the  \"AI Provider Settings\" section. Select your Active AI Provider from the dropdown. And click <b>\"Save AI Settings\" </b>  button.</i>",
+        "createdAt": "2025-11-24T12:21:00.781Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid463uuhoowf",
+        "text": "14. Save your Guide settings and progress. You can do a 1-click export if you are using Guide on a laptop. If on phone, you can still view / copy / edit the settings right within the app.<br/> <i>HOW: Click the <b>'Cog-wheel Settings icon'</b> at the bottom right. Under  \\\\\\\"AI Provider Settings\\\\\\\" - click <b>'Export Full Backup'</b> button. Or click <b>'View / Edit Backup'</b>.</i>",
+        "createdAt": "2025-11-24T12:19:15.846Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid45oc137xjl",
+        "text": "13. Guide offers tips on how to deal with stress when you are feeling rudderless or have a cluttered mind. <br/> <i>HOW: Click the <b>'Stressed'</b> button at the top-right. Click <b>'Interactive Guide'</b> button for guidance based on how are you feeling in the moment. </i>",
+        "createdAt": "2025-11-24T12:18:55.729Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid457mm070zu",
+        "text": "12. Guide helps you get unblocked when you are feeling overwhelmed or stuck.  <br/> <i>HOW: Click the <b>'Blocked'</b> button at the top-left. Click <b>'Help Me Get Unblocked'</b> button for interactive guidance based on what are you struggling with. Or explore all tips.",
+        "createdAt": "2025-11-24T12:18:34.078Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid44nzoshg1w",
+        "text": "11. Reminders to self keep you on track. Guide helps you keep them handy. <br/> <i>HOW: Click the <b>'Reminders'</b> link at the bottom right.",
+        "createdAt": "2025-11-24T12:18:08.628Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid4494h5lg8y",
+        "text": "10. References are similar to reminders but you can use them to keep some handy details. I am using them to keep track of few notes files I want to review every week or so. Use it your way. <br/> <i>HOW: Click the <b>'References'</b> link at the bottom.",
+        "createdAt": "2025-11-24T12:17:49.361Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid43uv1wwclp",
+        "text": "9. Routines set you free. These are predefined list of regular tasks that you can add to your list in 1-click. Like morning review tasks. Or weekly review. Anything. <br/> <i>HOW: Click the <b>'Routines'</b> link at the bottom. Click the blue <b>'Edit'</b> button for Morning Kickstart routine and add one more task on a new line after 'Go for a run', 'Coffee & Daily posts'. You can load all tasks in a routine using the <b>'Load'</b> button. </i>",
+        "createdAt": "2025-11-24T12:17:30.877Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid43dxaqk8yi",
+        "text": "8. Guide can help you build momentum when you are stuck by automatically adding a small task for you to complete and get moving.<br/> <i>HOW: Click the <b>'Task Bowl'</b> link at the bottom. Click <b>'blue Plus button'</b> and click <b>'Auto-Add'</b>. You can also do so form the home screen.</i>",
+        "createdAt": "2025-11-24T12:17:08.926Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid42we9ji3ut",
+        "text": "7. Let's add a new task. Say, 'Check out the code the Guide app page at nextfive.in/toolish/guide '<br/> <i>HOW: Click the <b>'Task Bowl'</b> link at the bottom. Click <b>'blue Plus button'</b>, enter a task and click <b>'Add'</b>. You can also do so form the home screen.</i>",
+        "createdAt": "2025-11-24T12:16:46.209Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid42afipnotn",
+        "text": "6. Let's take a short break. Let's ask Guide on what to do when bored. <br/> <i>HOW: Click the <b>'Bored'</b> button at top center. Click <b>'Surprise Me!'</b> for suggestions.</i> <br/> <i>NOTE:</i> You can ask for 'Something else' 3 times before the system forces a pause. So that you don't keep on playing with options :) You don't need a paradox of choices.",
+        "createdAt": "2025-11-24T12:16:17.742Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid41tba8pjc8",
+        "text": "5. You are getting good at this. Got quite a bit done! Let's see what all you did already in the <i>'Done'</i> section below.  And <i>then</i> mark this task too as 'Done'<br/> <i>HOW: Click the <b>'Done List'</b> link at the bottom left. You can filter this list as you want.</i>",
+        "createdAt": "2025-11-24T12:15:55.558Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      },
+      {
+        "id": "mid41d5t7qs62",
+        "text": "4. Let's add couple of goals of your own; something you'd want to work towards over next 3 months or so.<br/> <i>HOW: Click the <b>'See all goals'</b> link at the top and click on  <b>'Add New Goal'</b> button.</i>",
+        "createdAt": "2025-11-24T12:15:34.625Z",
+        "goalId": "micvnpkyw1no6",
+        "aiHelpText": null
+      }
+    ],
+    "goals": [
+      {
+        "id": "micvnpkyw1no6",
+        "text": "Learn about what Guide - this app - is all about",
+        "createdAt": "2025-11-24T08:21:00.610Z",
+        "endDate": null
+      }
+    ],
+    "currentGoal": null,
+    "boredState": null,
+    "referencesContent": "These are similar to reminders but you can use them to keep some handy details. I am using them to keep track of few notes files I want to review every week or so. Use it your way. \n\nClick the **Edit** button below to get started. \n\n---\n\n# NOTE\n- Basic **Markdown** _formatting_ supported.",
+    "remindersContent": "Reminders to self keep you on track. Guide helps you keep them handy. Use them your way. \n\n_Say, a reminder to what did you really wanted to focus on this year._\n\nClick the **Edit** button below to get started. \n\n---\n\n# NOTE\n- Basic **Markdown** _formatting_ supported.",
+    "routines": [
+      {
+        "id": "mid4h0qn3lr8j",
+        "name": "Morning Kickstart",
+        "tasks": [
+          "Go for a run",
+          "Coffee & Daily posts",
+          "<ADD-YOUR-NEXT-TASK-HERE>"
+        ]
+      }
+    ],
+    "lastOpenedDate": null,
+    "blockedTips": [
+      {
+        "text": "Focus on the bigger picture",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "overwhelm",
+          "focus"
+        ]
+      },
+      {
+        "text": "Have faith in your ideas",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "motivation",
+          "shipping"
+        ]
+      },
+      {
+        "text": "Don't let fear of asking hold you back",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "No perfect plan exists, start with good enough",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "Deliver four iterations in short loops - bad to great - instead of a single perfect one.",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "If stuck for 5+ minutes, take a call and move on; Most decisions are cheap. And reversible.",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "If stuck for 5+ minutes, take a call and move on; Most decisions are cheap. And reversible.",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "Be careful sharing incomplete thoughts",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "decision"
+        ]
+      },
+      {
+        "text": "Everyone has their niche",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "motivation",
+          "focus"
+        ]
+      },
+      {
+        "text": "Tell your story",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "motivation"
+        ]
+      },
+      {
+        "text": "Document weekly summaries",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "focus",
+          "motivation"
+        ]
+      },
+      {
+        "text": "Write detailed pieces",
+        "category": "Mindset",
+        "section": "Core Principles",
+        "issues": [
+          "focus"
+        ]
+      },
+      {
+        "text": "Take more leaps",
+        "category": "Productivity Philosophy",
+        "section": "Core Principles",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "Work best one thing at a time",
+        "category": "Productivity Philosophy",
+        "section": "Core Principles",
+        "issues": [
+          "overwhelm",
+          "focus"
+        ]
+      },
+      {
+        "text": "Small forward momentum helps",
+        "category": "Productivity Philosophy",
+        "section": "Core Principles",
+        "issues": [
+          "focus",
+          "motivation",
+          "starting"
+        ]
+      },
+      {
+        "text": "Avoid uncategorized lists",
+        "category": "Productivity Philosophy",
+        "section": "Core Principles",
+        "issues": [
+          "overwhelm",
+          "focus"
+        ]
+      },
+      {
+        "text": "Quantity over quality initially",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "starting",
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Tasks as 'creative plays'",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "starting",
+          "motivation"
+        ]
+      },
+      {
+        "text": "Remove self-imposed timelines",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "starting",
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Break down into small steps",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "starting",
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Delegate",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Get into flow",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "focus",
+          "starting",
+          "motivation"
+        ]
+      },
+      {
+        "text": "Difficult phases strategy",
+        "category": "Getting Started",
+        "section": "Action Framework",
+        "issues": [
+          "motivation",
+          "focus"
+        ]
+      },
+      {
+        "text": "Tasks get done, projects postponed",
+        "category": "Execution Strategies",
+        "section": "Action Framework",
+        "issues": [
+          "overwhelm",
+          "starting"
+        ]
+      },
+      {
+        "text": "'Done begets done'",
+        "category": "Execution Strategies",
+        "section": "Action Framework",
+        "issues": [
+          "motivation",
+          "shipping"
+        ]
+      },
+      {
+        "text": "Multiple iterations > perfection",
+        "category": "Execution Strategies",
+        "section": "Action Framework",
+        "issues": [
+          "shipping",
+          "starting"
+        ]
+      },
+      {
+        "text": "Time-boxing > scope estimation",
+        "category": "Execution Strategies",
+        "section": "Action Framework",
+        "issues": [
+          "focus",
+          "shipping",
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Make faster decisions",
+        "category": "Execution Strategies",
+        "section": "Action Framework",
+        "issues": [
+          "decision",
+          "focus"
+        ]
+      },
+      {
+        "text": "Planning to doing quickly",
+        "category": "Execution Strategies",
+        "section": "Action Framework",
+        "issues": [
+          "starting",
+          "decision"
+        ]
+      },
+      {
+        "text": "Rapid feedback cycles (2-2-2)",
+        "category": "Shipping Framework",
+        "section": "Action Framework",
+        "issues": [
+          "shipping",
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Keys to shipping",
+        "category": "Shipping Framework",
+        "section": "Action Framework",
+        "issues": [
+          "shipping"
+        ]
+      },
+      {
+        "text": "Share progress updates",
+        "category": "Shipping Framework",
+        "section": "Action Framework",
+        "issues": [
+          "shipping",
+          "motivation"
+        ]
+      },
+      {
+        "text": "Challenges: remembering & acting",
+        "category": "Task Management",
+        "section": "Task Management",
+        "issues": [
+          "focus",
+          "overwhelm"
+        ]
+      },
+      {
+        "text": "Maintain clear priorities",
+        "category": "Task Management",
+        "section": "Task Management",
+        "issues": [
+          "overwhelm",
+          "focus"
+        ]
+      },
+      {
+        "text": "Sustained energy factors",
+        "category": "Task Management",
+        "section": "Task Management",
+        "issues": [
+          "motivation",
+          "focus"
+        ]
+      }
+    ],
+    "stressedTips": {
+      "rudderless": [
+        "Set weekly/daily priorities",
+        "Break down tasks",
+        "Execute and pivot plans",
+        "Focus on quantity over quality for momentum",
+        "Get small things 'done'"
+      ],
+      "overwhelmed": [
+        "List worries and see what's real vs. catastrophisation",
+        "Write it all down, brain dump, pick just any 1-2 items that matter today",
+        "Drop items until you're left with 2-3",
+        "You're doing better than you think; Step back and see what you've achieved.",
+        "Take a walk outside",
+        "Practice morning pages",
+        "Announce need for alone time",
+        "Remind yourself some commitments might be voluntary"
+      ],
+      "cluttered": [
+        "Drop non-essential items",
+        "Finish lingering tasks",
+        "Limit media consumption",
+        "Uninterrupted me-time (music/nature sounds)",
+        "Control your morning time",
+        "Write it all down, brain dump, pick just any 1-2 items that matter today",
+        "Take a walk outside"
+      ],
+      "control": [
+        "Remind yourself some commitments are voluntary",
+        "Reframe tasks as creative plays",
+        "Focus on tiny next steps",
+        "Walks in nature by yourself",
+        "Permit 2 hours free time daily. Priortize this slot first on your calendar. Everything else will need to move around."
+      ],
+      "uncertain": [
+        "Write down issues and actions",
+        "Check if making it bigger than necessary",
+        "Get small things 'done'",
+        "Plans don't need to be perfect",
+        "Magic of action",
+        "Permit 2 hours free time daily - Let your mind wander, it's essential"
+      ],
+      "generic": [
+        "Exercise",
+        "Uninterrupted me-time",
+        "Control morning time",
+        "Permit 2 hours free time",
+        "No drama",
+        "Magic of action",
+        "Plans don't need to be perfect, just execute and pivot.",
+        "Focus on quantity over quality to build momentum.",
+        "Set priorities to stay focused.",
+        "Break down tasks into smaller chunks.",
+        "Get small things 'done' to build momentum.",
+        "Commitments are voluntary.",
+        "Reframe tasks as creative plays.",
+        "Focus on tiny next steps.",
+        "Morning pages help center.",
+        "Walks help clear the mind.",
+        "Announce need for alone time."
+      ]
+    },
+    "boredActions": [
+      "🚶‍♂️ Take a 15-minute brisk walk outside",
+      "📞 Call or text a friend",
+      "🍳 Try a new quick recipe",
+      "📖 Read a chapter of a book",
+      "🧘 Do a 5-10 minute meditation",
+      "🙏 Write 3 things you're grateful for",
+      "🎧 Listen to a new podcast episode",
+      "🤸 Do 10 minutes of stretching",
+      "🧹 Tidy up one small area",
+      "🎥 Watch a short TED Talk",
+      "🎨 Draw or doodle for 15 minutes",
+      "🍽️ Plan meals for the next two days",
+      "🌱 Water your plants",
+      "🎵 Listen to an album distraction-free",
+      "🗣️ Learn 5 phrases in a new language",
+      "❓ Do a quick online quiz",
+      "✍️ Write a short poem/paragraph",
+      "👛 Declutter your wallet/purse",
+      "🌳 Step outside & observe for 5 minutes",
+      "☁️ Look up at the clouds/stars",
+      "🧩 Do a simple puzzle",
+      "💻 Organize desktop files",
+      "🐶 Watch funny animal videos",
+      "🎤 Sing along loudly",
+      "✈️ Browse a travel website"
+    ],
+    "theme": "light",
+    "aiSettings": null
+  }
+}
