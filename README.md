@@ -94,7 +94,30 @@ This is the best part. There is no installation.
 
  The app is now running. You can bookmark the page for easy access. All your data will be saved automatically in that browser.
 
-**Important Note on Data**: Because your data is stored in the browser, it is tied to that specific browser on that specific computer. To use the app on another machine or to prevent data loss, be sure to use the **Settings > Backup & Restore > Export Full Backup** feature regularly.
+ On the 1st run, **Guide offers a streamlined, 2-step process to import demo data**. This allows new users to explore the features with pre-filled content immediately, rather than facing a blank screen.
+ Strongly suggest you give it a go - takes less than 5 mins.
+ <table>
+ <tr align="center">
+    <td align="center" width=33%>
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/guide_onboarding_01.png" alt="Learn how to use Guide...">
+      <br>
+      <em>Learn how to use Guide...</em>
+    </td>
+    <td align="center" width=33%>
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/guide_onboarding_02.png" alt="... in 2 steps.">
+      <br>
+      <em>... in 2 steps.</em>
+    </td>
+    <td align="center" width=33%>
+      <img src="https://github.com/nextfiveinc/guide/blob/main/screenshots/guide_onboarding_03.png" alt="Help always available from Settings screen">
+      <br>
+      <em>Help always available from Settings</em>
+     </td>
+ </tr>
+</table>
+
+
+**Important note on data**: Because your data is stored in the browser, it is tied to that specific browser on that specific computer. To use the app on another machine or to prevent data loss, be sure to use the **Settings > Backup & Restore > Export Full Backup** feature regularly.
 
 ### Contributing
 
