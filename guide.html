@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide (v28 - playbooks_minor_fix)</title>
+    <title>Guide (v32 - Onboarding modal)</title>
         <style>
             /* --- Modern Color Palette & Styles --- */
             :root {
@@ -136,6 +136,28 @@
             #theme-toggle { position: absolute; top: 6px; right: 6px; z-index: 101; } /* FIX: Adjusted position */
             .back-button { z-index: 110; position: absolute; top: 6px; left: 6px; color: var(--color-text-secondary); } /* FIX: Position and color */
 
+            /* New Styles for Onboarding */
+            .onboarding-wrapper {
+                text-align: center;
+                margin-top: 20px;
+                padding: 15px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                border: 1px dashed var(--color-border);
+            }
+            .onboarding-step-img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                margin: 10px 0;
+                background: #eee;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 150px;
+            }
+
             @media (max-width:600px){
                 body{padding-left:5px;padding-right:5px}
                 #app-header,#app-footer{margin-left:-5px;margin-right:-5px;padding-left:10px;padding-right:10px}
@@ -153,7 +175,11 @@
         </button>
         <!-- START: New AI Insights Button -->
         <button id="nav-ai-insights" class="btn-icon" title="AI Insights" style="position: absolute; top: 6px; left: 50px; z-index: 110;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M20 12h-4"/><path d="m12 12 4 4"/><path d="M8 12h.01"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                <path d="M5 3v4"></path>
+                <path d="M9 5H1"></path>
+            </svg>
         </button>
         <!-- END: New AI Insights Button -->
         <button id="theme-toggle" class="btn-icon" title="Toggle Theme"></button>
@@ -194,6 +220,12 @@
                     <button id="load-routine-btn" class="btn btn-secondary">Load a Routine</button>
                 </div>
                  <div id="empty-pending-message" class="hidden"> Clean plate! Enjoy... or add some tasks. </div>
+
+                 <!-- NEW: Onboarding Trigger -->
+                 <div id="onboarding-trigger-wrapper" class="onboarding-wrapper hidden">
+                    <p style="margin-bottom:10px; font-size: 0.9em; color: var(--color-text-secondary);">New here?</p>
+                    <button id="start-onboarding-btn" class="btn btn-primary">🚀 Learn how to use Guide</button>
+                 </div>
             </section>
         </div>
 
@@ -330,8 +362,9 @@
 
         <!-- === Settings View === -->
         <div id="settings-view" class="app-view">
-            <div class="view-header">
+            <div class="view-header" style="align-items: center;">
                 <h2>Settings</h2>
+                <button id="settings-onboarding-btn" class="btn btn-primary" style="margin: 0;">🚀 Learn how to use Guide</button>
             </div>
 
             <section class="settings-section">
@@ -541,7 +574,9 @@
             const toastElement = document.getElementById('toast-notification');
             const mainContentArea = document.getElementById('main-content-area');
             let pendingTasksList, addTaskBtn, addTaskForm, newTaskInput, tagWithGoalCheckbox, submitAddTaskBtn, autoAddTaskBtn, cancelAddTaskBtn, emptyPendingMessage, goalsList, addNewGoalBtn, addGoalForm, newGoalInput, submitAddGoalBtn, cancelAddGoalBtn, emptyGoalsMessage, doneListContainer, doneTimeFilter, doneGoalFilter, emptyDoneMessage, taskBowlListContainer, emptyTaskBowlMessage, referencesView, remindersView, copyGoalsBtn, copyDoneBtn, copyBowlBtn, copyRefsBtn, copyRemindersBtn, resetAppBtn,
-                loadRoutineBtn, routinesView, routinesList, addNewRoutineBtn, addRoutineForm, newRoutineNameInput, newRoutineTasksInput, submitAddRoutineBtn, cancelAddRoutineBtn, emptyRoutinesMessage, editRoutineIdInput, routineLoaderArea, goalGuideBtn;
+                loadRoutineBtn, routinesView, routinesList, addNewRoutineBtn, addRoutineForm, newRoutineNameInput, newRoutineTasksInput, submitAddRoutineBtn, cancelAddRoutineBtn, emptyRoutinesMessage, editRoutineIdInput, routineLoaderArea, goalGuideBtn,
+                // NEW: Onboarding Elements
+                onboardingTriggerWrapper, startOnboardingBtn;
 
                         // --- NEW: Function to create the Blitz Timer Web Worker ---
             function createBlitzWorker() {
@@ -671,9 +706,82 @@
              function updateCurrentGoalDisplay() { if (!tagWithGoalCheckbox || !currentGoalDisplay || !newTaskInput) { console.warn("updateCurrentGoalDisplay called before DOM elements ready."); return; } if (currentGoal && currentGoal.text) { const formattedEndDate = formatDate(currentGoal.endDate); currentGoalDisplay.innerHTML = `Current goal: <strong>${currentGoal.text}</strong>${formattedEndDate ? ` till ${formattedEndDate}` : ''}`; tagWithGoalCheckbox.disabled = false; tagWithGoalCheckbox.parentElement.style.opacity = 1; } else { currentGoalDisplay.innerHTML = `No current focus set. <a href="#" id="set-goal-link">Set one?</a>`; tagWithGoalCheckbox.disabled = true; tagWithGoalCheckbox.checked = false; tagWithGoalCheckbox.parentElement.style.opacity = 0.5; const setGoalLink = document.getElementById('set-goal-link'); if (setGoalLink) setGoalLink.onclick = (e) => { e.preventDefault(); showView('goals-view'); }; } updateAddTaskPlaceholder(); }
              function updateAddTaskPlaceholder() { if (!newTaskInput) return; const placeholders = ["What needs a decision?", "What small step?", "Where stuck?", "Get off plate?", "Cancel/delegate?", "Commitment?", "Add details..."]; newTaskInput.placeholder = (currentGoal && currentGoal.text) ? `E.g. related to ${currentGoal.text}` : placeholders[Math.floor(Math.random() * placeholders.length)]; }
 
+            // --- NEW: Onboarding Logic ---
+            function checkIfFreshInstall() {
+                return pendingTasks.length === 0 &&
+                       doneTasks.length === 0 &&
+                       taskBowl.length === 0 &&
+                       goals.length === 0 &&
+                       routines.length === 0;
+            }
+
+            function showOnboardingModal() {
+                const modalBodyDiv = document.createElement('div');
+
+                // 1. Updated HTML content for the 2-step process
+                modalBodyDiv.innerHTML = `
+                    <p style="margin-bottom: 15px;">Welcome to Guide! To help you get started quickly, you can import a pre-configured setup.</p>
+                    <ol style="margin-left: 20px; line-height: 1.8; margin-bottom: 20px;">
+                        <li>
+                            <a href="https://raw.githubusercontent.com/nextfiveinc/guide/refs/heads/main/onboarding.json" target="_blank" style="font-weight: bold; text-decoration: underline;">
+                                Download the Onboarding File
+                            </a>
+                            <br><small style="color: var(--color-text-secondary);">(Right-click link & choose "Save Link As...")</small>
+                        </li>
+                        <li>
+                            Click the button below and select the file you just downloaded.
+                        </li>
+                    </ol>
+
+                    <div style="text-align: center; margin: 25px 0;">
+                        <button id="direct-import-btn" class="btn btn-success" style="font-size: 1.2em; padding: 12px 24px;">
+                            📂 Import Onboarding File
+                        </button>
+                    </div>
+
+                    <i><small style="color: var(--color-text-secondary);">YES, you can safely ignore the "Overwrite All Data?" and click the "Yes, Overwrite All" button that comes up while importing.</small></i>
+                `;
+
+                // 2. Attach Logic: Programmatically click the hidden settings input
+                const importBtn = modalBodyDiv.querySelector('#direct-import-btn');
+                importBtn.addEventListener('click', () => {
+                    const hiddenInput = document.getElementById('import-full-backup-input');
+                    if (hiddenInput) {
+                        hiddenInput.click();
+                        // Note: We don't need to manually close this modal.
+                        // Once the file is selected, 'handleFullBackupImport' fires,
+                        // which calls 'showModal' (Confirmation), automatically replacing this one.
+                    } else {
+                        showToast("Error finding import control. Please use Settings.", "error");
+                    }
+                });
+
+                // 3. Show the modal
+                // We set the main button to "Close" since the primary action is now inside the body
+                showModal("Import Demo Data", modalBodyDiv, null, "Close", " ");
+
+                // Cosmetic tweak: Hide the 'Cancel' button (which is the second argument " ")
+                // by manipulating the DOM immediately after showing the modal,
+                // or simply rely on the "Close" button acting as the dismiss.
+                const cancelBtn = document.getElementById('modal-cancel-btn');
+                if(cancelBtn) cancelBtn.style.display = 'none';
+            }
+
+
             // --- Task Management (CRUD) ---
              function renderPendingTasks() {
-                 pendingTasksList.innerHTML = ''; const hasTasks = pendingTasks.length > 0; emptyPendingMessage.classList.toggle('hidden', hasTasks); routineLoaderArea.classList.toggle('hidden', hasTasks);
+                 pendingTasksList.innerHTML = '';
+                 const hasTasks = pendingTasks.length > 0;
+                 emptyPendingMessage.classList.toggle('hidden', hasTasks);
+                 routineLoaderArea.classList.toggle('hidden', hasTasks);
+
+                 // NEW: Check for Fresh Install State
+                 if (!hasTasks && checkIfFreshInstall()) {
+                     onboardingTriggerWrapper.classList.remove('hidden');
+                 } else {
+                     onboardingTriggerWrapper.classList.add('hidden');
+                 }
+
                  pendingTasks.forEach(task => {
                      const card = document.createElement('div'); card.className = 'task-card'; card.dataset.taskId = task.id;
                      let goalText = '[Add Goal]'; if (task.goalId) { const linkedGoal = goals.find(g => g.id === task.goalId); if (linkedGoal) { goalText = truncate(linkedGoal.text, 40); } }
@@ -1754,6 +1862,9 @@ ${request} Present the output as a simple, un-numbered list, with one task per l
                  pendingTasksList = document.getElementById('pending-tasks-list'); addTaskBtn = document.getElementById('add-task-btn'); addTaskForm = document.getElementById('add-task-form'); newTaskInput = document.getElementById('new-task-input'); tagWithGoalCheckbox = document.getElementById('tag-with-goal-checkbox'); submitAddTaskBtn = document.getElementById('submit-add-task'); autoAddTaskBtn = document.getElementById('auto-add-task'); cancelAddTaskBtn = document.getElementById('cancel-add-task'); emptyPendingMessage = document.getElementById('empty-pending-message'); goalsList = document.getElementById('goals-list'); addNewGoalBtn = document.getElementById('add-new-goal-btn'); addGoalForm = document.getElementById('add-goal-form'); newGoalInput = document.getElementById('new-goal-input'); submitAddGoalBtn = document.getElementById('submit-add-goal'); cancelAddGoalBtn = document.getElementById('cancel-add-goal'); emptyGoalsMessage = document.getElementById('empty-goals-message'); doneListContainer = document.getElementById('done-list'); doneTimeFilter = document.getElementById('done-time-filter'); doneGoalFilter = document.getElementById('done-goal-filter'); emptyDoneMessage = document.getElementById('empty-done-message'); taskBowlListContainer = document.getElementById('task-bowl-list'); emptyTaskBowlMessage = document.getElementById('empty-task-bowl-message'); referencesView = document.getElementById('references-view'); remindersView = document.getElementById('reminders-view'); copyGoalsBtn = document.getElementById('copy-goals-btn'); copyDoneBtn = document.getElementById('copy-done-btn'); copyBowlBtn = document.getElementById('copy-bowl-btn'); copyRefsBtn = document.getElementById('copy-refs-btn'); copyRemindersBtn = document.getElementById('copy-reminders-btn'); resetAppBtn = document.getElementById('reset-app-btn');
                  loadRoutineBtn = document.getElementById('load-routine-btn'); routineLoaderArea = document.getElementById('routine-loader-area'); routinesView = document.getElementById('routines-view'); routinesList = document.getElementById('routines-list'); addNewRoutineBtn = document.getElementById('add-new-routine-btn'); addRoutineForm = document.getElementById('add-routine-form'); newRoutineNameInput = document.getElementById('new-routine-name'); newRoutineTasksInput = document.getElementById('new-routine-tasks'); submitAddRoutineBtn = document.getElementById('submit-add-routine'); cancelAddRoutineBtn = document.getElementById('cancel-add-routine'); emptyRoutinesMessage = document.getElementById('empty-routines-message'); editRoutineIdInput = document.getElementById('edit-routine-id');
                  goalGuideBtn = document.getElementById('goal-guide-btn');
+                 // NEW: Onboarding Elements
+                 onboardingTriggerWrapper = document.getElementById('onboarding-trigger-wrapper');
+                 startOnboardingBtn = document.getElementById('start-onboarding-btn');
 
                  updateCurrentGoalDisplay(); renderPendingTasks(); populateGoalFilters();
 
@@ -1785,7 +1896,7 @@ ${request} Present the output as a simple, un-numbered list, with one task per l
                  addEventListeners();
                  setupDataManagement();
                  showView('main-view');
-                 console.log("Guide App Initialized (v27 - AI Goal Guide)");
+                 console.log("Guide App Initialized (v32 - with onboarding)");
             }
 
             // --- Event Listeners Setup ---
@@ -1843,6 +1954,15 @@ ${request} Present the output as a simple, un-numbered list, with one task per l
                  });
                  cancelAddRoutineBtn.addEventListener('click', () => { addRoutineForm.classList.add('hidden'); addNewRoutineBtn.classList.remove('hidden'); });
                  submitAddRoutineBtn.addEventListener('click', handleAddOrUpdateRoutine);
+
+                 // NEW: Event Listener for Onboarding
+                 if (startOnboardingBtn) startOnboardingBtn.addEventListener('click', showOnboardingModal);
+
+                 // NEW: Event Listener for Onboarding (Settings View)
+                 const settingsOnboardingBtn = document.getElementById('settings-onboarding-btn');
+                 if (settingsOnboardingBtn) {
+                     settingsOnboardingBtn.addEventListener('click', showOnboardingModal);
+                 }
 
                  BlockedMode.addListeners(); BoredMode.addListeners(); StressedMode.addListeners();
 
