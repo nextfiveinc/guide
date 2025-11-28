@@ -121,7 +121,7 @@ This is the best part. There is no installation.
 
 ### Contributing
 
-Contributions are welcome! If you have a feature idea or have found a bug, please open an issue first to discuss it.
+Contributions are welcome! If you have a feature idea or have found a bug, please open an issue first to discuss it. _Or drop me a note at guide@nextfive.simplelogin.com_
 
 ## License
 
