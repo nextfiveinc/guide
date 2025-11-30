@@ -555,7 +555,147 @@
                 theme: LS_PREFIX + 'theme',
                 aiSettings: LS_PREFIX + 'aiSettings'
             };
-
+            // --- EMBEDDED DEMO DATA ---
+            const DEMO_DATA = {
+                "version": "2.0-backup",
+                "exportedAt": new Date().toISOString(),
+                "data": {
+                    "pendingTasks": [
+                        {
+                            "id": "demo_t1",
+                            "text": "1. Set a Focus Goal.<br/><i>HOW: Click <b>'See all goals'</b> (top), then <b>'Set Focus'</b> on 'Learn Guide'. Pick a date.</i>",
+                            "createdAt": new Date(Date.now() - 16000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_t2",
+                            "text": "2. Mark tasks as Done.<br/><i>HOW: Click <b>'Done'</b> on Task 1. Enter a short comment (5+ chars). Do the same for this task.</i>",
+                            "createdAt": new Date(Date.now() - 15000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_t3",
+                            "text": "3. Move tasks from Bowl to Today.<br/><i>HOW: Click <b>'Task Bowl'</b> (bottom). Click <b>'Add to Today'</b> on tasks 4 & 5. Then mark this Done.</i>",
+                            "createdAt": new Date(Date.now() - 14000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        }
+                    ],
+                    "taskBowl": [
+                        {
+                            "id": "demo_b16",
+                            "text": "16. You're ready! Guide is local & private.<br/><i>Feedback? Star us on <a href='https://github.com/nextfiveinc/guide'>GitHub</a> or email [account]+guide@gmail.com.</i>",
+                            "createdAt": new Date().toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b15",
+                            "text": "15. Enable AI features (optional).<br/><i>HOW: Go to <b>Settings</b>. Enter your API Key under 'AI Provider Settings' and click <b>'Save'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 2000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b14",
+                            "text": "14. Backup your data.<br/><i>HOW: Go to <b>Settings</b> (bottom right). Click <b>'Export Full Backup'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 3000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b13",
+                            "text": "13. Manage stress.<br/><i>HOW: Click <b>'Stressed'</b> (top right). Try the <b>'Interactive Guide'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 4000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b12",
+                            "text": "12. Get unblocked.<br/><i>HOW: Click <b>'Blocked'</b> (top left). Use <b>'Help Me Get Unblocked'</b> for strategies.</i>",
+                            "createdAt": new Date(Date.now() - 5000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b11",
+                            "text": "11. Store Reminders.<br/><i>HOW: Click <b>'Reminders'</b> (bottom right) to view or edit.</i>",
+                            "createdAt": new Date(Date.now() - 6000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b10",
+                            "text": "10. Store References (notes).<br/><i>HOW: Click <b>'References'</b> (bottom center) to view or edit.</i>",
+                            "createdAt": new Date(Date.now() - 7000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b9",
+                            "text": "9. Use Routines for recurring lists.<br/><i>HOW: Click <b>'Routines'</b> (bottom). <b>'Edit'</b> 'Morning Kickstart', add a task, then <b>'Load'</b> it.</i>",
+                            "createdAt": new Date(Date.now() - 8000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b8",
+                            "text": "8. Auto-Add a small task for momentum.<br/><i>HOW: Click <b>+</b> (in Pending or Bowl), then click <b>'Auto-Add'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 9000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b7",
+                            "text": "7. Create a new task.<br/><i>HOW: Click <b>+</b> (in Pending or Bowl). Type a task and click <b>'Add'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 10000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b6",
+                            "text": "6. Take a break.<br/><i>HOW: Click <b>'Bored'</b> (top center). Click <b>'Surprise Me!'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 11000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b5",
+                            "text": "5. Review completed work.<br/><i>HOW: Click <b>'Done List'</b> (bottom left). Check your progress.</i>",
+                            "createdAt": new Date(Date.now() - 12000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        },
+                        {
+                            "id": "demo_b4",
+                            "text": "4. Set a new Goal.<br/><i>HOW: Click <b>'See all goals'</b> (top header). Click <b>'Add New Goal'</b>.</i>",
+                            "createdAt": new Date(Date.now() - 13000).toISOString(),
+                            "goalId": "demo_g1",
+                            "aiHelpText": null
+                        }
+                    ],
+                    "goals": [
+                        { "id": "demo_g1", "text": "Learn Guide (The App)", "createdAt": new Date().toISOString(), "endDate": null }
+                    ],
+                    "doneTasks": [],
+                    "currentGoal": null,
+                    "boredState": null,
+                    "referencesContent": "These are similar to reminders but you can use them to keep some handy details. I am using them to keep track of few notes files I want to review every week or so. Use it your way. \n\nClick the **Edit** button below to get started. \n\n---\n\n# NOTE\n- Basic **Markdown** _formatting_ supported.",
+                    "remindersContent": "Reminders to self keep you on track. Guide helps you keep them handy. Use them your way. \n\n_Say, a reminder to what did you really wanted to focus on this year._\n\nClick the **Edit** button below to get started. \n\n---\n\n# NOTE\n- Basic **Markdown** _formatting_ supported.",
+                    "routines": [
+                        { "id": "demo_r1", "name": "Morning Kickstart", "tasks": ["Go for a run", "Coffee & Daily posts", "<ADD-YOUR-NEXT-TASK-HERE>"] }
+                    ],
+                    // We can inherit the defaultBlockedTips and defaultStressedTips from the app logic if they are missing here,
+                    // but keeping specific ones ensures consistency.
+                    "blockedTips": [
+                         { "text": "Focus on the bigger picture", "category": "Mindset", "section": "Core Principles", "issues": ["overwhelm", "focus"] },
+                         { "text": "Work best one thing at a time", "category": "Productivity Philosophy", "section": "Core Principles", "issues": ["overwhelm", "focus"] },
+                         { "text": "Break down into small steps", "category": "Getting Started", "section": "Action Framework", "issues": ["starting", "overwhelm"] }
+                    ]
+                }
+            };
             // --- State Variables ---
             let pendingTasks = [], doneTasks = [], taskBowl = [], goals = [], currentGoal = null,
                 routines = [], activeBlitzes = {}, blitzWorker = null,
@@ -718,55 +858,65 @@
             function showOnboardingModal() {
                 const modalBodyDiv = document.createElement('div');
 
-                // 1. Updated HTML content for the 2-step process
                 modalBodyDiv.innerHTML = `
-                    <p style="margin-bottom: 15px;">Welcome to Guide! To help you get started quickly, you can import a pre-configured setup.</p>
-                    <ol style="margin-left: 20px; line-height: 1.8; margin-bottom: 20px;">
-                        <li>
-                            <a href="https://raw.githubusercontent.com/nextfiveinc/guide/refs/heads/main/onboarding.json" target="_blank" style="font-weight: bold; text-decoration: underline;">
-                                Download the Onboarding File
-                            </a>
-                            <br><small style="color: var(--color-text-secondary);">(Right-click link & choose "Save Link As...")</small>
-                        </li>
-                        <li>
-                            Click the button below and select the file you just downloaded.
-                        </li>
-                    </ol>
+                    <p style="margin-bottom: 20px;">
+                        Welcome to Guide! Since this is a fresh install, would you like to load some sample data?
+                    </p>
+                    <p style="margin-bottom: 20px; font-size: 0.9em; color: var(--color-text-secondary);">
+                        This will set up example Goals, Tasks, and Routines so you can see how the app works instantly.
+                    </p>
 
-                    <div style="text-align: center; margin: 25px 0;">
-                        <button id="direct-import-btn" class="btn btn-success" style="font-size: 1.2em; padding: 12px 24px;">
-                            📂 Import Onboarding File
+                    <div style="text-align: center; margin: 30px 0;">
+                        <button id="load-demo-btn" class="btn btn-success" style="font-size: 1.1em; padding: 15px 30px; width: 100%;">
+                            ✨ Load Demo Data
                         </button>
                     </div>
-
-                    <i><small style="color: var(--color-text-secondary);">YES, you can safely ignore the "Overwrite All Data?" and click the "Yes, Overwrite All" button that comes up while importing.</small></i>
                 `;
 
-                // 2. Attach Logic: Programmatically click the hidden settings input
-                const importBtn = modalBodyDiv.querySelector('#direct-import-btn');
-                importBtn.addEventListener('click', () => {
-                    const hiddenInput = document.getElementById('import-full-backup-input');
-                    if (hiddenInput) {
-                        hiddenInput.click();
-                        // Note: We don't need to manually close this modal.
-                        // Once the file is selected, 'handleFullBackupImport' fires,
-                        // which calls 'showModal' (Confirmation), automatically replacing this one.
-                    } else {
-                        showToast("Error finding import control. Please use Settings.", "error");
-                    }
+                // Logic: Take the const object and load it into LocalStorage
+                const loadBtn = modalBodyDiv.querySelector('#load-demo-btn');
+                loadBtn.addEventListener('click', () => {
+                    // We reuse the logic from backup restoration, but we skip the file reader
+                    // and just use our object.
+                    const restoreDemoData = () => {
+                        try {
+                            // 1. Validate version (basic check)
+                            if (!DEMO_DATA.data || !DEMO_DATA.version.startsWith("2.0")) {
+                                throw new Error("Internal Demo Data is corrupted.");
+                            }
+
+                            // 2. Clear existing (though it should be empty if we are here)
+                            // and Load new data
+                            Object.entries(DEMO_DATA.data).forEach(([keyName, data]) => {
+                                const lsKey = LS_PREFIX + keyName;
+                                // Only import keys that strictly belong to our app
+                                if (Object.values(LS_KEYS).includes(lsKey)) {
+                                     saveToLocalStorage(lsKey, data);
+                                }
+                            });
+
+                            showToast('Demo data loaded! Reloading...', 'success');
+                            setTimeout(() => location.reload(), 1000);
+
+                        } catch (error) {
+                             showToast(`Error loading demo: ${error.message}`, 'error', 5000);
+                        }
+                    };
+
+                    // Ask for final confirmation (reusing existing modal system)
+                    // We hide the current onboarding modal by triggering a new one
+                    showModal(
+                        'Load Demo Data?',
+                        'This will fill your lists with example tasks. You can delete them later.',
+                        restoreDemoData,
+                        'Yes, Load it'
+                    );
                 });
 
-                // 3. Show the modal
-                // We set the main button to "Close" since the primary action is now inside the body
-                showModal("Import Demo Data", modalBodyDiv, null, "Close", " ");
-
-                // Cosmetic tweak: Hide the 'Cancel' button (which is the second argument " ")
-                // by manipulating the DOM immediately after showing the modal,
-                // or simply rely on the "Close" button acting as the dismiss.
+                showModal("Get Started", modalBodyDiv, null, "Close", " ");
                 const cancelBtn = document.getElementById('modal-cancel-btn');
                 if(cancelBtn) cancelBtn.style.display = 'none';
             }
-
 
             // --- Task Management (CRUD) ---
              function renderPendingTasks() {
