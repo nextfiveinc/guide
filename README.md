@@ -1,6 +1,7 @@
 # Guide
 
 A complete system to guide you to your goals and help you achieve them by keeping you focussed, overcome blocks and build momentum. Private. No-installation.
+[**Demo link:**](https://blog.nextfive.in/demo/guide/)
 
 <table>
   <tr align="center">
@@ -86,7 +87,7 @@ For more screenshots, see [gallery](screenshots/README.md)
 
 ## How to Use
 
-This is the best part. There is no installation.
+This is the best part. There is no installation. You can [**use it directly here**](https://blog.nextfive.in/demo/guide/) _or_ just **save the file** on your laptop / mobile and start using, even without internet connection.
 
 1.  **Download** the `guide.html` file.
 2.  **Open** it in any modern web browser - on your desktop or your mobile. Tested on Chrome on Android and Firefox / Chrome on Desktop.
